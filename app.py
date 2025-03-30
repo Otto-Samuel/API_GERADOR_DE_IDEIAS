@@ -4,7 +4,6 @@ import os
 
 app = Flask(__name__)
 
-# Listas para gerar ideias criativas
 temas = {
     "filmes": ["astronauta", "detetive", "pirata", "robô", "mago"],
     "jogos": ["corrida", "aventura", "estratégia", "puzzle", "sobrevivência"],
@@ -16,13 +15,11 @@ detalhes = ["um planeta estranho", "uma conspiração antiga", "um tesouro escon
             "um vilão inesperado"]
 
 
-# Rota para a página inicial
 @app.route('/')
 def home():
     return render_template('index.html')
 
 
-# Rota para gerar ideias
 @app.route('/gerar', methods=['GET'])
 def gerar_ideia():
     tema = request.args.get('tema', '').lower()
