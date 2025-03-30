@@ -1,8 +1,8 @@
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, render_template
 import random
 import os
 
-app = Flask(__name__, static_folder='.', template_folder='.')
+app = Flask(__name__)
 
 # Listas para gerar ideias criativas
 temas = {
@@ -19,8 +19,10 @@ detalhes = ["um planeta estranho", "uma conspiração antiga", "um tesouro escon
 # Rota para a página inicial
 @app.route('/')
 def home():
-    return send_from_directory('.', 'index.html')
+    return render_template('index.html')
 
+
+# Rota para gerar ideias
 @app.route('/gerar', methods=['GET'])
 def gerar_ideia():
     tema = request.args.get('tema', '').lower()

@@ -6,7 +6,8 @@ async function gerarIdeia() {
         resultadoDiv.innerText = "Por favor, selecione um tema!";
         return;
     }
-    const url = `https://api-criativa.onrender.com/gerar?tema=${tema}`;
+
+    const url = `http://127.0.0.1:5000/gerar?tema=${tema}`;
 
     try {
         const response = await fetch(url);
