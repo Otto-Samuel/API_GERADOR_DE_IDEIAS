@@ -7,7 +7,7 @@ async function gerarIdeia() {
         return;
     }
 
-    const url = `http://127.0.0.1:5000/gerar?tema=${tema}`;
+    const url = `/gerar?tema=${tema}`;  // URL relativa, funciona no Render
 
     try {
         const response = await fetch(url);

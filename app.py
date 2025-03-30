@@ -4,12 +4,12 @@ import os
 
 app = Flask(__name__)
 
+# Listas para gerar ideias
 temas = {
     "filmes": ["astronauta", "detetive", "pirata", "robô", "mago"],
     "jogos": ["corrida", "aventura", "estratégia", "puzzle", "sobrevivência"],
     "histórias": ["floresta mágica", "cidade futurista", "reino perdido", "escola secreta", "ilha misteriosa"]
 }
-
 ações = ["descobre", "luta contra", "explora", "constrói", "salva"]
 detalhes = ["um planeta estranho", "uma conspiração antiga", "um tesouro escondido", "uma máquina do tempo",
             "um vilão inesperado"]
