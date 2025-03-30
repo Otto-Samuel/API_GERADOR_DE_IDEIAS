@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #01101c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #a1a1a1;
+    background-color: #4d4d4d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,8 @@ body {
 }
 
 h1 {
-    color: #ff0000;
+    color: #00e0c2;
+    box-shadow: aqua;
 }
 
 select, button {
@@ -28,14 +29,14 @@ select, button {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #3abff6;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2d94c2;
 }
 
 .resultado {
